@@ -1,0 +1,115 @@
+<mxfile host="draw.io">
+  <diagram name="Rescisao" id="rescisao">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Title -->
+        <mxCell id="t1" value="RESCISAO CONTRATUAL" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fillColor=#1a1a2e;fontColor=#FFFFFF;rounded=1;strokeColor=#16213e;spacingTop=8;spacingBottom=8;" vertex="1" parent="1">
+          <mxGeometry x="450" y="20" width="700" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="t1b" value="Cancelamento do contrato - calculo de quem deve pra quem" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="500" y="72" width="600" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 1 -->
+        <mxCell id="s1" value="1. SOMAR O QUE JA FOI PAGO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="300" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="s1d" value="Principal Quitado = soma de todas as&#xa;parcelas ja pagas pelo formando&#xa;&#xa;Inclui:&#xa;  - Parcelas normais (mensais)&#xa;  - Parcelas estendidas&#xa;  - Arrecadacao alternativa&#xa;&#xa;Exemplo: 5 parcelas de R$1.000 pagas&#xa;  Principal Quitado = R$5.000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="300" height="200" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 2 -->
+        <mxCell id="s2" value="2. CALCULAR MULTA RESCISORIA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6b800;fontColor=#000000;strokeColor=#B09500;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="380" y="130" width="300" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="s2d" value="Retencao definida por regra da turma&#xa;(varia conforme proximidade do baile)&#xa;&#xa;Multa = Valor do Plano x Retencao%&#xa;&#xa;Exemplo:&#xa;  Plano: R$10.000&#xa;  Retencao: 30%&#xa;  Multa = R$10.000 x 30%&#xa;       = R$3.000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="380" y="190" width="300" height="200" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrow -->
+        <mxCell id="a12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="s1" target="s2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 3 -->
+        <mxCell id="s3" value="3. SOMAR DEBITOS PENDENTES" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6b800;fontColor=#000000;strokeColor=#B09500;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="720" y="130" width="300" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="s3d" value="Debitos extras do formando:&#xa;&#xa;  Juros de atraso nas parcelas vencidas&#xa;  Multas de atraso&#xa;  Acordos de renegociacao nao pagos&#xa;&#xa;Exemplo:&#xa;  Juros/multas pendentes: R$200&#xa;  Acordos nao quitados: R$800&#xa;  Total debitos: R$1.000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="720" y="190" width="300" height="200" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="s2" target="s3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 4: Decision -->
+        <mxCell id="s4" value="4. CALCULAR SALDO FINAL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a4286a;fontColor=#ffffff;strokeColor=#740037;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="130" width="300" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="s4d" value="Saldo = Quitado - Multa - Juros - Acordos&#xa;&#xa;Se Saldo &gt; 0:&#xa;  FORMANDO RECEBE o saldo&#xa;  (empresa devolve dinheiro)&#xa;&#xa;Se Saldo &lt; 0:&#xa;  FORMANDO PAGA o saldo&#xa;  (formando deve dinheiro)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="190" width="300" height="190" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="s3" target="s4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Scenarios -->
+        <mxCell id="sc" value="CENARIOS TESTADOS" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fillColor=#1a1a2e;fontColor=#FFFFFF;rounded=1;strokeColor=#16213e;spacingTop=5;spacingBottom=5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="430" width="1320" height="35" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="scA" value="Cenario A: FORMANDO RECEBE&#xa;&#xa;Quitado: R$5.000&#xa;Multa: R$3.000&#xa;Juros: R$0 | Acordos: R$0&#xa;&#xa;Saldo = 5000 - 3000 = +R$2.000&#xa;Formando recebe R$2.000  ✓" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;align=left;spacingLeft=12;spacingRight=12;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="490" width="320" height="170" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="scB" value="Cenario B: FORMANDO PAGA&#xa;&#xa;Quitado: R$2.000&#xa;Multa: R$3.000&#xa;Juros: R$0 | Acordos: R$0&#xa;&#xa;Saldo = 2000 - 3000 = -R$1.000&#xa;Formando paga R$1.000  ✓" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;align=left;spacingLeft=12;spacingRight=12;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="400" y="490" width="320" height="170" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="scC" value="Cenario C: COM DEBITOS EXTRAS&#xa;&#xa;Quitado: R$5.000&#xa;Multa: R$3.000&#xa;Juros: R$200 | Acordos: R$800&#xa;&#xa;Saldo = 5000-3000-200-800 = +R$1.000&#xa;Formando recebe R$1.000  ✓" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;align=left;spacingLeft=12;spacingRight=12;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="760" y="490" width="320" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- Browser flow -->
+        <mxCell id="bf" value="FLUXO NO PORTAL (Browser)" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fillColor=#1a1a2e;fontColor=#FFFFFF;rounded=1;strokeColor=#16213e;spacingTop=4;spacingBottom=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="700" width="1320" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b1" value="Login" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="745" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b2" value="Meus&#xa;Contratos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="185" y="745" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b3" value="Acoes >&#xa;Rescisao" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="330" y="745" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b4" value="Preencher&#xa;Motivo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="475" y="745" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b5" value="Verificar&#xa;Calculo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="620" y="745" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b6" value="Confirmar" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="765" y="745" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b7" value="Verificar&#xa;Sucesso" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="910" y="745" width="110" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ab12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b1" target="b2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ab23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b2" target="b3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ab34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b3" target="b4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ab45" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b4" target="b5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ab56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b5" target="b6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ab67" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b6" target="b7"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
