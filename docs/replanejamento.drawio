@@ -1,99 +1,140 @@
 <mxfile host="draw.io">
   <diagram name="Replanejamento" id="replanejamento">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="1800" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1400" math="0" shadow="0">
       <root>
         <mxCell id="0"/>
         <mxCell id="1" parent="0"/>
 
-        <!-- Title -->
-        <mxCell id="t1" value="REPLANEJAMENTO FINANCEIRO" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fillColor=#1a1a2e;fontColor=#FFFFFF;rounded=1;strokeColor=#16213e;spacingTop=8;spacingBottom=8;" vertex="1" parent="1">
-          <mxGeometry x="450" y="20" width="700" height="50" as="geometry"/>
+        <mxCell id="t1" value="REPLANEJAMENTO FINANCEIRO" style="text;html=1;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;fillColor=#1a1a2e;fontColor=#FFFFFF;rounded=1;strokeColor=#16213e;spacingTop=8;spacingBottom=8;" vertex="1" parent="1">
+          <mxGeometry x="350" y="15" width="1100" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="t1b" value="Renegociacao de parcelas vencidas - novo parcelamento" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#888888;" vertex="1" parent="1">
-          <mxGeometry x="500" y="72" width="600" height="25" as="geometry"/>
-        </mxCell>
-
-        <!-- Step 1: Identificar parcelas -->
-        <mxCell id="s1" value="1. IDENTIFICAR PARCELAS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
-          <mxGeometry x="40" y="130" width="250" height="50" as="geometry"/>
-        </mxCell>
-        <mxCell id="s1d" value="Separar parcelas em 4 grupos:&#xa;&#xa;  Mensal Vencido = parcelas normais atrasadas&#xa;  AA Vencida = arrecadacao alternativa atrasada&#xa;  Mensal Futuro = parcelas normais a vencer&#xa;  AA Futura = arrecadacao alternativa a vencer&#xa;&#xa;Exemplo:&#xa;  3 parcelas de R$500 vencidas = R$1.500&#xa;  2 parcelas de R$500 futuras = R$1.000&#xa;  Principal total = R$2.500" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="40" y="190" width="320" height="220" as="geometry"/>
+        <mxCell id="t1b" value="Renegociacao de parcelas vencidas - gera novo parcelamento com entrada + encargos" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="400" y="68" width="1000" height="22" as="geometry"/>
         </mxCell>
 
-        <!-- Step 2: Calcular encargos -->
-        <mxCell id="s2" value="2. CALCULAR ENCARGOS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6b800;fontColor=#000000;strokeColor=#B09500;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
-          <mxGeometry x="400" y="130" width="250" height="50" as="geometry"/>
-        </mxCell>
-        <mxCell id="s2d" value="Para cada parcela vencida:&#xa;&#xa;  Multa = 2% do valor da parcela&#xa;  Juros = 1% ao mes x dias de atraso&#xa;&#xa;Exemplo (parcela de R$500):&#xa;  90 dias: multa R$10 + juros R$15 = R$25&#xa;  60 dias: multa R$10 + juros R$10 = R$20&#xa;  30 dias: multa R$10 + juros R$5  = R$15&#xa;&#xa;  Taxa total de renegociacao = R$60" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="400" y="190" width="320" height="220" as="geometry"/>
+        <!-- CONTRATO -->
+        <mxCell id="cs" value="CONTRATO ORIGINAL" style="text;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;fillColor=#0050ef;fontColor=#FFFFFF;rounded=1;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="30" y="100" width="1740" height="30" as="geometry"/>
         </mxCell>
 
-        <!-- Arrow 1->2 -->
-        <mxCell id="a12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="s1" target="s2">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="c1" value="Contrato #12345  |  Turma FORMAE-99999  |  Plano Ouro R$6.000  |  12x de R$500  |  Vencimento dia 10  |  Inicio Set/2025" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8eaf6;strokeColor=#7986CB;fontSize=12;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="30" y="135" width="1100" height="30" as="geometry"/>
         </mxCell>
 
-        <!-- Step 3: Calcular entrada -->
-        <mxCell id="s3" value="3. CALCULAR ENTRADA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
-          <mxGeometry x="760" y="130" width="250" height="50" as="geometry"/>
+        <!-- Parcelas -->
+        <mxCell id="p1" value="Set/25&#xa;R$500&#xa;PAGO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="175" width="75" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="s3d" value="Entrada Inteligente = o MAIOR entre:&#xa;&#xa;  A) 10% do valor vencido&#xa;     = 10% x R$1.500 = R$150&#xa;&#xa;  B) Valor de 1 parcela do novo plano&#xa;     = R$2.500 / 12 = R$208,33&#xa;&#xa;  Entrada = R$208,33 (o maior)&#xa;&#xa;Garante que a entrada nao seja&#xa;menor que uma parcela mensal." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="760" y="190" width="320" height="220" as="geometry"/>
+        <mxCell id="p2" value="Out/25&#xa;R$500&#xa;PAGO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="175" width="75" height="50" as="geometry"/>
         </mxCell>
-
-        <!-- Arrow 2->3 -->
-        <mxCell id="a23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="s2" target="s3">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="p3" value="Nov/25&#xa;R$500&#xa;PAGO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="175" width="75" height="50" as="geometry"/>
         </mxCell>
-
-        <!-- Step 4: Novo parcelamento -->
-        <mxCell id="s4" value="4. NOVO PARCELAMENTO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a4286a;fontColor=#ffffff;strokeColor=#740037;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="130" width="250" height="50" as="geometry"/>
+        <mxCell id="p4" value="Dez/25&#xa;R$500&#xa;PAGO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="175" width="75" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="s4d" value="Restante = Principal - Entrada&#xa;         = R$2.500 - R$208,33&#xa;         = R$2.291,67&#xa;&#xa;Parcelas restantes = 12 - 1 = 11&#xa;&#xa;Valor parcela = R$2.291,67 / 11&#xa;              = R$208,33&#xa;&#xa;Parcela minima: R$50 (OK!)&#xa;&#xa;Total com taxa: R$2.500 + R$60&#xa;              = R$2.560" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="190" width="320" height="220" as="geometry"/>
+        <mxCell id="p5" value="Jan/26&#xa;R$500&#xa;VENCIDA&#xa;90 dias" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="175" width="80" height="50" as="geometry"/>
         </mxCell>
-
-        <!-- Arrow 3->4 -->
-        <mxCell id="a34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="s3" target="s4">
-          <mxGeometry relative="1" as="geometry"/>
+        <mxCell id="p6" value="Fev/26&#xa;R$500&#xa;VENCIDA&#xa;60 dias" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="175" width="80" height="50" as="geometry"/>
         </mxCell>
-
-        <!-- Browser flow -->
-        <mxCell id="bf" value="FLUXO NO PORTAL (Browser)" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fillColor=#1a1a2e;fontColor=#FFFFFF;rounded=1;strokeColor=#16213e;spacingTop=5;spacingBottom=5;" vertex="1" parent="1">
-          <mxGeometry x="40" y="460" width="1400" height="35" as="geometry"/>
+        <mxCell id="p7" value="Mar/26&#xa;R$500&#xa;VENCIDA&#xa;30 dias" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="175" width="80" height="50" as="geometry"/>
         </mxCell>
-
-        <mxCell id="b1" value="Login&#xa;(email + senha)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="40" y="520" width="130" height="50" as="geometry"/>
+        <mxCell id="p8" value="Abr/26&#xa;R$500&#xa;FUTURA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="645" y="175" width="70" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="b2" value="Meus&#xa;Contratos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="210" y="520" width="130" height="50" as="geometry"/>
+        <mxCell id="p9" value="Mai/26&#xa;R$500&#xa;FUTURA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="175" width="70" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="b3" value="Acoes >&#xa;Replanejamento" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="380" y="520" width="140" height="50" as="geometry"/>
+        <mxCell id="p10" value="Jun/26&#xa;R$500&#xa;FUTURA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="795" y="175" width="70" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="b4" value="Formulario&#xa;(calendario + sliders)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="560" y="520" width="160" height="50" as="geometry"/>
+        <mxCell id="p11" value="Jul/26&#xa;R$500&#xa;FUTURA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="175" width="70" height="50" as="geometry"/>
         </mxCell>
-        <mxCell id="b5" value="Confirmar&#xa;Replanejamento" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="760" y="520" width="140" height="50" as="geometry"/>
-        </mxCell>
-        <mxCell id="b6" value="Verificar&#xa;Sucesso" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="940" y="520" width="130" height="50" as="geometry"/>
+        <mxCell id="p12" value="Ago/26&#xa;R$500&#xa;FUTURA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="945" y="175" width="70" height="50" as="geometry"/>
         </mxCell>
 
+        <mxCell id="leg" value="4 pagas = R$2.000  |  3 vencidas = R$1.500  |  5 futuras = R$2.500  |  Pendente total = R$4.000  |  Data referencia: 10/03/2026" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;spacingLeft=5;" vertex="1" parent="1">
+          <mxGeometry x="30" y="230" width="1000" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="sum" value="Resumo&#xa;Ja pagou: 4 x R$500 = R$2.000&#xa;Vencidas: 3 x R$500 = R$1.500&#xa;Futuras:  5 x R$500 = R$2.500&#xa;Pendente: R$4.000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8eaf6;strokeColor=#7986CB;fontSize=11;align=left;spacingLeft=10;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="135" width="230" height="95" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cfg" value="Config de encargos:&#xa;Multa: 2% (fixa)&#xa;Juros: 1% ao mes&#xa;Tipo: SIMPLES&#xa;Entrada min: 10%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8eaf6;strokeColor=#7986CB;fontSize=11;align=left;spacingLeft=10;verticalAlign=top;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="135" width="200" height="95" as="geometry"/>
+        </mxCell>
+
+        <!-- PASSO 1 -->
+        <mxCell id="st1" value="PASSO 1: DECOMPOR PRINCIPAL" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fillColor=#e6b800;fontColor=#000000;rounded=1;strokeColor=#B09500;" vertex="1" parent="1">
+          <mxGeometry x="30" y="270" width="840" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="d1" value="Separar parcelas pendentes em 4 grupos:&#xa;&#xa;  Mensal Vencido  = parcelas normais atrasadas        = 3 x R$500 = R$1.500&#xa;  AA Vencida      = arrecadacao alternativa atrasada   = R$0 (nao tem)&#xa;  Mensal Futuro   = parcelas normais a vencer          = 5 x R$500 = R$2.500&#xa;  AA Futura       = arrecadacao alternativa a vencer    = R$0 (nao tem)&#xa;&#xa;  Principal Vencido = Mensal Vencido + AA Vencida = R$1.500 + R$0 = R$1.500&#xa;  Principal Total   = tudo pendente = R$1.500 + R$2.500 = R$4.000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=12;verticalAlign=top;spacingTop=8;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="30" y="305" width="840" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- PASSO 2 -->
+        <mxCell id="st2" value="PASSO 2: CALCULAR ENCARGOS (TAXA DE RENEGOCIACAO)" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fillColor=#e6b800;fontColor=#000000;rounded=1;strokeColor=#B09500;" vertex="1" parent="1">
+          <mxGeometry x="890" y="270" width="880" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="d2" value="Para cada parcela VENCIDA, cobrar multa + juros:&#xa;&#xa;  FORMULA MULTA:  Multa = Valor x (Percentual / 100)&#xa;                 Multa = R$500 x 0,02 = R$10,00 (igual pra todas)&#xa;&#xa;  FORMULA JUROS:  Juros = Valor x (Taxa/100) x (Dias / 30)&#xa;&#xa;  Jan/26 (90 dias atrasada):&#xa;    Juros = R$500 x 0,01 x (90/30) = R$500 x 0,01 x 3 = R$15,00&#xa;    Encargo desta parcela = R$10 + R$15 = R$25,00&#xa;&#xa;  Fev/26 (60 dias atrasada):&#xa;    Juros = R$500 x 0,01 x (60/30) = R$500 x 0,01 x 2 = R$10,00&#xa;    Encargo desta parcela = R$10 + R$10 = R$20,00&#xa;&#xa;  Mar/26 (30 dias atrasada):&#xa;    Juros = R$500 x 0,01 x (30/30) = R$500 x 0,01 x 1 = R$5,00&#xa;    Encargo desta parcela = R$10 + R$5 = R$15,00&#xa;&#xa;  TAXA TOTAL DE RENEGOCIACAO = R$25 + R$20 + R$15 = R$60,00" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=12;verticalAlign=top;spacingTop=8;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="890" y="305" width="880" height="350" as="geometry"/>
+        </mxCell>
+
+        <!-- PASSO 3 -->
+        <mxCell id="st3" value="PASSO 3: CALCULAR ENTRADA INTELIGENTE" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fillColor=#60a917;fontColor=#FFFFFF;rounded=1;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="30" y="510" width="840" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="d3" value="A entrada e o MAIOR entre duas opcoes:&#xa;&#xa;  Opcao A = 10% do principal vencido&#xa;          = 10% x R$1.500 = R$150,00&#xa;&#xa;  Opcao B = valor de 1 parcela do novo plano&#xa;          = Principal Total / Numero de Parcelas&#xa;          = R$4.000 / 12 = R$333,33&#xa;&#xa;  FORMULA:  Entrada = MAX(Opcao A, Opcao B)&#xa;            Entrada = MAX(R$150, R$333,33)&#xa;            Entrada = R$333,33&#xa;&#xa;  Por que? Garante que a entrada nao seja menor que 1 parcela." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=12;verticalAlign=top;spacingTop=8;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="30" y="545" width="840" height="255" as="geometry"/>
+        </mxCell>
+
+        <!-- PASSO 4 -->
+        <mxCell id="st4" value="PASSO 4: MONTAR NOVO PARCELAMENTO" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fillColor=#a4286a;fontColor=#ffffff;rounded=1;strokeColor=#740037;" vertex="1" parent="1">
+          <mxGeometry x="30" y="820" width="840" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="d4" value="FORMULA:&#xa;  Restante = Principal Total - Entrada&#xa;           = R$4.000 - R$333,33 = R$3.666,67&#xa;&#xa;  Parcelas restantes = 12 - 1 = 11  (entrada conta como 1a parcela)&#xa;&#xa;  Valor parcela = Restante / Parcelas restantes&#xa;               = R$3.666,67 / 11 = R$333,33&#xa;&#xa;  Validacao: parcela minima = R$50&#xa;  R$333,33 >= R$50? SIM!&#xa;&#xa;RESUMO DO NOVO CONTRATO:&#xa;  1x entrada de R$333,33 (paga na hora)&#xa;  + 11x parcelas de R$333,33&#xa;  = R$4.000,00 (principal)&#xa;  + R$60,00 (taxa de renegociacao)&#xa;  = R$4.060,00 total" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=12;verticalAlign=top;spacingTop=8;fontFamily=Courier New;" vertex="1" parent="1">
+          <mxGeometry x="30" y="855" width="840" height="310" as="geometry"/>
+        </mxCell>
+
+        <!-- RESULTADO -->
+        <mxCell id="res" value="RESULTADO DO TESTE&#xa;&#xa;  Multa 2% de R$500 = R$10,00                PASSOU&#xa;  Juros 1%/mes, 90d, R$500 = R$15,00          PASSOU&#xa;  Juros 1%/mes, 60d, R$500 = R$10,00          PASSOU&#xa;  Juros 1%/mes, 30d, R$500 = R$5,00           PASSOU&#xa;  Taxa renegociacao = R$60,00                  PASSOU&#xa;  Entrada inteligente = R$333,33               PASSOU&#xa;  11 parcelas de R$333,33                      PASSOU&#xa;  Parcela >= R$50                              PASSOU" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;align=left;spacingLeft=12;verticalAlign=top;spacingTop=8;fontFamily=Courier New;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="680" width="600" height="200" as="geometry"/>
+        </mxCell>
+
+        <!-- BROWSER -->
+        <mxCell id="bf" value="FLUXO NO PORTAL" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontStyle=1;fillColor=#1a1a2e;fontColor=#FFFFFF;rounded=1;strokeColor=#16213e;" vertex="1" parent="1">
+          <mxGeometry x="890" y="900" width="880" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="b1" value="1. Login" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="890" y="935" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="b2" value="2. Contratos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1005" y="935" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="b3" value="3. Acoes >&#xa;Replanejamento" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="935" width="115" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="b4" value="4. Formulario&#xa;(sliders)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="935" width="110" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="b5" value="5. Confirmar" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1375" y="935" width="90" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="b6" value="6. Sucesso" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="935" width="90" height="35" as="geometry"/>
+        </mxCell>
         <mxCell id="ab12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b1" target="b2"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="ab23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b2" target="b3"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="ab34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b3" target="b4"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="ab45" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b4" target="b5"><mxGeometry relative="1" as="geometry"/></mxCell>
         <mxCell id="ab56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b5" target="b6"><mxGeometry relative="1" as="geometry"/></mxCell>
-
-        <!-- Result box -->
-        <mxCell id="res" value="RESULTADO DO TESTE&#xa;&#xa;Multa 2% de R$500 = R$10,00  ✓&#xa;Juros 1%/mes 90d de R$500 = R$15,00  ✓&#xa;Taxa total = R$60,00  ✓&#xa;Entrada inteligente = R$208,33  ✓&#xa;11 parcelas de R$208,33  ✓&#xa;Parcela minima >= R$50  ✓" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;align=left;spacingLeft=12;spacingRight=12;verticalAlign=top;spacingTop=8;fontStyle=0;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="460" width="320" height="170" as="geometry"/>
-        </mxCell>
 
       </root>
     </mxGraphModel>
