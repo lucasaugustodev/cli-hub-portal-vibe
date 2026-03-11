@@ -1,0 +1,115 @@
+<mxfile host="draw.io">
+  <diagram name="Downgrade" id="downgrade">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Title -->
+        <mxCell id="t1" value="DOWNGRADE DE PLANO" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fillColor=#1a1a2e;fontColor=#FFFFFF;rounded=1;strokeColor=#16213e;spacingTop=8;spacingBottom=8;" vertex="1" parent="1">
+          <mxGeometry x="450" y="20" width="700" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="t1b" value="Mudanca para plano mais barato - se ja pagou mais do que o novo plano vale, tem credito excedente" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="350" y="72" width="900" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 1 -->
+        <mxCell id="s1" value="1. CALCULAR CREDITO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="250" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="s1d" value="Credito = tudo que o formando ja pagou&#xa;no contrato atual&#xa;&#xa;Exemplo:&#xa;  Plano atual: R$12.000&#xa;  Pagou varias parcelas&#xa;  Credito = R$5.000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="300" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 2 -->
+        <mxCell id="s2" value="2. ABATER NA ENTRADA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6b800;fontColor=#000000;strokeColor=#B09500;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="380" y="130" width="250" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="s2d" value="Entrada do novo plano = 10% do valor&#xa;&#xa;Plano novo: R$8.000&#xa;Entrada = 10% x R$8.000 = R$800&#xa;&#xa;Credito (R$5.000) cobre toda a entrada&#xa;&#xa;Entrada a pagar: R$0&#xa;Credito restante: R$5.000 - R$800&#xa;                = R$4.200" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="380" y="190" width="300" height="200" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="s1" target="s2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 3 -->
+        <mxCell id="s3" value="3. ABATER NAS PARCELAS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="720" y="130" width="250" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="s3d" value="Credito restante (R$4.200) abate&#xa;do valor a parcelar&#xa;&#xa;Valor parcelado = R$8.000 - R$800&#xa;               = R$7.200&#xa;&#xa;Credito R$4.200 cobre R$3.600&#xa;das parcelas + sobra R$0&#xa;&#xa;Parcela = R$250,00 por mes&#xa;(valor parcelado reduzido)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="720" y="190" width="300" height="210" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="s2" target="s3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Step 4 -->
+        <mxCell id="s4" value="4. VERIFICAR EXCEDENTE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a4286a;fontColor=#ffffff;strokeColor=#740037;fontSize=14;fontStyle=1;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="130" width="250" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="s4d" value="Se o credito for MAIOR que&#xa;o valor total do novo plano:&#xa;&#xa;  Credito excedente = sobra&#xa;  Parcela mensal = R$0&#xa;  Contrato ja quitado!&#xa;&#xa;Neste caso: credito R$5.000&#xa;menor que plano R$8.000&#xa;Excedente = R$0&#xa;Parcela = R$250/mes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#CCCCCC;fontSize=12;align=left;spacingLeft=10;spacingRight=10;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="190" width="300" height="210" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="s3" target="s4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Scenarios -->
+        <mxCell id="sc" value="CENARIOS" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1;fillColor=#1a1a2e;fontColor=#FFFFFF;rounded=1;strokeColor=#16213e;spacingTop=5;spacingBottom=5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="1320" height="35" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="scA" value="Cenario A: CREDITO PARCIAL&#xa;&#xa;Plano atual: R$12.000&#xa;Plano novo: R$8.000&#xa;Ja pagou: R$5.000&#xa;&#xa;Credito cobre entrada (R$800)&#xa;+ abate R$4.200 nas parcelas&#xa;Parcela: R$250/mes em 12x  ✓" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;align=left;spacingLeft=12;spacingRight=12;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="500" width="350" height="180" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="scB" value="Cenario B: CREDITO TOTAL (formando ja pagou&#xa;mais que o novo plano vale)&#xa;&#xa;Plano atual: R$12.000&#xa;Plano novo: R$4.000&#xa;Ja pagou: R$5.000&#xa;&#xa;Credito R$5.000 &gt; Plano R$4.000&#xa;Excedente: R$1.000 (devolver!)&#xa;Parcela: R$0 - contrato quitado  ✓" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;align=left;spacingLeft=12;spacingRight=12;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="430" y="500" width="370" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- Browser flow -->
+        <mxCell id="bf" value="FLUXO NO PORTAL (Browser)" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;fillColor=#1a1a2e;fontColor=#FFFFFF;rounded=1;strokeColor=#16213e;spacingTop=4;spacingBottom=4;" vertex="1" parent="1">
+          <mxGeometry x="40" y="720" width="1320" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="b1" value="Login" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="770" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b2" value="Meus&#xa;Contratos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="175" y="770" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b3" value="Acoes >&#xa;Downgrade" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="310" y="770" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b4" value="Selecionar&#xa;Plano Menor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="455" y="770" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b5" value="Configurar&#xa;Parcelas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="600" y="770" width="110" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b6" value="Confirmar" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="745" y="770" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b7" value="Verificar&#xa;Sucesso" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="880" y="770" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ab12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b1" target="b2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ab23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b2" target="b3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ab34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b3" target="b4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ab45" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b4" target="b5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ab56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b5" target="b6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ab67" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#6c8ebf;" edge="1" parent="1" source="b6" target="b7"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- Test result -->
+        <mxCell id="res" value="RESULTADO DO TESTE  ✓&#xa;&#xa;Cenario A: 12x R$250  ✓&#xa;Cenario B: R$0 + excedente R$1.000  ✓" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;align=left;spacingLeft=12;spacingRight=12;verticalAlign=top;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="500" width="300" height="100" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
